@@ -30,9 +30,6 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
 # vercel
 .vercel
 
@@ -41,3 +38,24 @@ yarn-error.log*
 next-env.d.ts
 
 /lib/generated/prisma
+
+# .gitignore
+
+# Environment variables
+.env
+.env*.local
+.env.production
+
+# Database
+*.db
+*.db-journal
+
+# Docker volumes (local data)
+postgres_data/
+redis_data/
+pgadmin_data/
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
